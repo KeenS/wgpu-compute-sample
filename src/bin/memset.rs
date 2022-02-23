@@ -56,7 +56,7 @@ fn main() {
         push_constant_ranges: &[],
     });
     let compute_pipeline = device.create_compute_pipeline(&wgpu::ComputePipelineDescriptor {
-        label: Some("Render Pipeline"),
+        label: Some("Compute Pipeline"),
         layout: Some(&pipeline_layout),
         module: &module,
         entry_point: "cs_main",
