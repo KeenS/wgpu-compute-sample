@@ -1,5 +1,5 @@
 struct Output {
-  o: array<u32, 512>;
+  o: array<u32>;
 };
 
 @group(0) @binding(0)
