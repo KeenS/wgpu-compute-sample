@@ -5,8 +5,6 @@ var<storage, read_write> output: array<u32>;
 fn cs_main(
    @builtin(global_invocation_id) global_id: vec3<u32>,
 ) {
-  let start = global_id.x * 64u;
-  for(var i = start; i < start + 64u; i += 1u) {
-    output[i] = i;
-  }
+  let idx = global_id.x;
+  output[idx] = idx;
 }
