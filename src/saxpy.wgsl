@@ -1,17 +1,9 @@
-struct Array {
-  a: array<f32>;
-};
-
 @group(0) @binding(0)
-var<storage>             x: Array;
+var<storage>             x: array<f32>;
 @group(0) @binding(1)
-var<storage, read_write> y: Array;
+var<storage, read_write> y: array<f32>;
 
-struct PushConstant {
-  a: f32;
-};
-
-var<push_constant> a: PushConstant;
+var<push_constant> a: f32;
 
 @stage(compute) @workgroup_size(64)
 fn cs_main(
@@ -19,6 +11,6 @@ fn cs_main(
 ) {
   let start = global_id.x * 64u;
   for(var i = start; i < start + 64u; i += 1u) {
-    y.a[i] = a.a * x.a[i] + y.a[i];
+    y[i] = a * x[i] + y[i];
   }
 }

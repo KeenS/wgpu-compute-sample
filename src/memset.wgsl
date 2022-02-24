@@ -1,9 +1,5 @@
-struct Output {
-  o: array<u32>;
-};
-
 @group(0) @binding(0)
-var<storage, read_write> output: Output;
+var<storage, read_write> output: array<u32>;
 
 @stage(compute) @workgroup_size(64)
 fn cs_main(
@@ -11,6 +7,6 @@ fn cs_main(
 ) {
   let start = global_id.x * 64u;
   for(var i = start; i < start + 64u; i += 1u) {
-    output.o[i] = i;
+    output[i] = i;
   }
 }

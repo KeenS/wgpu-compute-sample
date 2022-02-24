@@ -6,8 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-wgpu = { git = "https://github.com/gfx-rs/wgpu.git", rev ="766c6cd" }
-naga = {git = "https://github.com/gfx-rs/naga", rev = "81dc674" }
+wgpu = { git = "https://github.com/gfx-rs/wgpu.git", rev ="dd4a5396d68f087580205ffcc7db3105f11c053d" }
 pollster = "0.2.5"
 env_logger = "0.9.0"
 log = "0.4.14"

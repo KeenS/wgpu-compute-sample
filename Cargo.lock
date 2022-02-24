@@ -413,7 +413,7 @@ checksum = "308cc39be01b73d0d18f82a0e7b2a3df85245f84af96fdddc5d202d27e47b86a"
 [[package]]
 name = "metal"
 version = "0.23.1"
-source = "git+https://github.com/gfx-rs/metal-rs?rev=140c8f4#140c8f4e39001ae154f153ffc767da6c0c9d7f06"
+source = "git+https://github.com/gfx-rs/metal-rs?rev=44af5cc#44af5cca340617d42d701264f9bf71d1f3e68096"
 dependencies = [
  "bitflags",
  "block",
@@ -426,7 +426,7 @@ dependencies = [
 [[package]]
 name = "naga"
 version = "0.8.0"
-source = "git+https://github.com/gfx-rs/naga?rev=81dc674#81dc67402a743b4dc6b2d24c0d306cd18799238b"
+source = "git+https://github.com/gfx-rs/naga?rev=a45b9a6#a45b9a6cc691a671aa24a32114b51c5acae02420"
 dependencies = [
  "bit-set",
  "bitflags",
@@ -762,7 +762,7 @@ dependencies = [
 [[package]]
 name = "wgpu"
 version = "0.12.0"
-source = "git+https://github.com/gfx-rs/wgpu.git?rev=766c6cd#766c6cda1917c1265fa8a5f610ef7516d4314d1b"
+source = "git+https://github.com/gfx-rs/wgpu.git?rev=dd4a5396d68f087580205ffcc7db3105f11c053d#dd4a5396d68f087580205ffcc7db3105f11c053d"
 dependencies = [
  "arrayvec",
  "js-sys",
@@ -786,7 +786,6 @@ dependencies = [
  "bytemuck",
  "env_logger",
  "log",
- "naga",
  "pollster",
  "wgpu",
 ]
@@ -794,7 +793,7 @@ dependencies = [
 [[package]]
 name = "wgpu-core"
 version = "0.12.0"
-source = "git+https://github.com/gfx-rs/wgpu.git?rev=766c6cd#766c6cda1917c1265fa8a5f610ef7516d4314d1b"
+source = "git+https://github.com/gfx-rs/wgpu.git?rev=dd4a5396d68f087580205ffcc7db3105f11c053d#dd4a5396d68f087580205ffcc7db3105f11c053d"
 dependencies = [
  "arrayvec",
  "bitflags",
@@ -816,7 +815,7 @@ dependencies = [
 [[package]]
 name = "wgpu-hal"
 version = "0.12.0"
-source = "git+https://github.com/gfx-rs/wgpu.git?rev=766c6cd#766c6cda1917c1265fa8a5f610ef7516d4314d1b"
+source = "git+https://github.com/gfx-rs/wgpu.git?rev=dd4a5396d68f087580205ffcc7db3105f11c053d#dd4a5396d68f087580205ffcc7db3105f11c053d"
 dependencies = [
  "arrayvec",
  "ash",
@@ -853,7 +852,7 @@ dependencies = [
 [[package]]
 name = "wgpu-types"
 version = "0.12.0"
-source = "git+https://github.com/gfx-rs/wgpu.git?rev=766c6cd#766c6cda1917c1265fa8a5f610ef7516d4314d1b"
+source = "git+https://github.com/gfx-rs/wgpu.git?rev=dd4a5396d68f087580205ffcc7db3105f11c053d#dd4a5396d68f087580205ffcc7db3105f11c053d"
 dependencies = [
  "bitflags",
 ]
